@@ -4,13 +4,19 @@ The objective of this homework is to get OpenGL working on your machine. This di
 
 In order to get this program to work, you'll have to set up some OpenGL components. The specific instructions depend on what system you are using.
 
+Detailed written instructions are in this README. If you are using Windows or Mac, you can also watch one of these video tutorials I made last semester (you will be cloning this git repo, not the one from last spring):
+
+[Windows Tutorial](https://www.youtube.com/watch?v=JRfVsgw6DBA)
+
+[Mac Tutorial](https://www.youtube.com/watch?v=GlFHStTH8-0)
+
 ## Windows Setup
 
+1. Install CMake (get it here: https://cmake.org/download/)
+1. Install git if you don't have it: https://git-scm.com/download/win
 1. Install Visual Studio 2022 (not just VS Code). When you install, you'll have the choice to select different options. Make sure you install any components related to command line development, C++, Graphics, and OpenGL. If in doubt, just install everything.
 1. Open up the developer PowerShell with Tools > Command Line > Developer PowerShell -- you will use this for all the terminal commands.
-1. Install git if you don't have it: https://git-scm.com/download/win
 1. git clone this repo by typing `git clone https://github.com/eeeeaarr/cs629_spring24.git` at the terminal.
-1. Install CMake (get it here: https://cmake.org/download/)
 1. Download 64 bit GLFW precompiled binaries from https://www.glfw.org/download.html. This will be a zipfile.
    1. Extract the zipfile. You should have a folder named "glfw-3.3.9.bin.WIN64"
    1. Put that folder in the "dependencies" folder of this project
