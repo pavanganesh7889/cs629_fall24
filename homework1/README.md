@@ -24,6 +24,7 @@ Detailed written instructions are in this README. If you are using Windows or Ma
    1. Extract the zipfile. You should have a folder named "glew-2.1.0"
    1. Put that folder in the "dependencies" folder of this project
 1. There is a DLL in glew-2.1.0\bin\Release\x64 called "glew32.dll" that needs to be in the search path when you run your program. There are multiple ways to do this. If you don't do this correctly, the program will compile, but when you try to run it, it will immediately exit with no warning or message.
+
    1. The easy way is to just drag the file into the C:\Windows\System32 folder.
    1. You can also add the location of the file to your search path. The command for adding a directory to your search path in powershell is `$env:PATH += ";the/directory/goes/here`. 
 1. Type `cmake ./src` in the homework folder.
@@ -40,6 +41,7 @@ Important note: Macs do not natively support OpenGL versions after 4.1. This sho
 1. Install Homebrew from https://brew.sh/
 1. Type `brew install glfw` in the terminal.
 1. Type `brew install glew` in the terminal.
+1. POSSIBLY you need to type `brew install cmake` in the terminal
 1. Type `cmake ./src` in the homework folder.
 1. Type `make` to build your project.
 1. Run the executable by typing `./homework1_exe`
