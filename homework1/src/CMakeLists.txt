@@ -16,18 +16,18 @@ endif()
 
 if(WIN32)
    set(GLEW_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glew-2.1.0/include")
-   set(GLFW_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glfw-3.3.9.bin.WIN64/include")
+   set(GLFW_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glfw-3.4.bin.WIN64/include")
 
    # Set paths to GLEW and GLFW libraries
    set(GLEW_LIBRARY "${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glew-2.1.0/lib/Release/x64/glew32.lib")
-   set(GLFW_LIBRARY "${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glfw-3.3.9.bin.WIN64/lib-vc2022/glfw3.lib")
+   set(GLFW_LIBRARY "${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glfw-3.4.bin.WIN64/lib-vc2022/glfw3.lib")
 
    # Include directories
    include_directories(${GLEW_INCLUDE_DIR} ${GLFW_INCLUDE_DIR})
 
    # Link directories
    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glew-2.1.0/lib/Release/x64")
-   link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glfw-3.3.9.bin.WIN64/lib-vc2022")
+   link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../../dependencies/glfw-3.4.bin.WIN64/lib-vc2022")
 endif()
 
 if(UNIX AND NOT APPLE)
